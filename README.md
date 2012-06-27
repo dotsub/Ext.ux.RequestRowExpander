@@ -9,7 +9,7 @@ This plugin was created since the current Ext.ux.RowExpander only expands with t
 
 
 Usage:
-
+```
 plugins: [{
 	ptype: 'requestrowexpander',
     rowBodyTpl : [
@@ -21,16 +21,16 @@ plugins: [{
     idParam: 'uuid',
     objectRoot: 'myJSONObject'
 }],
-
+```
 When a row is expanded this would generate a request to '/serverPath/objectInfo?uuid=ObjectID'. 
 
 This would expect a reply from the server in JSON:
-
+```
 {
 	myJSONObject {
 		title: "Some Title",
 		description: "Some Description"
 	}	
 }
-
+```
 This JSON Object would be passed to the template to render. 
